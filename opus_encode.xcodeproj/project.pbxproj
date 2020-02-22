@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		15B1862A24015DC5008266FE /* opus_encode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = opus_encode; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B1862D24015DC5008266FE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		15B1863424015FAE008266FE /* headers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = headers; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 		15B1862C24015DC5008266FE /* opus_encode */ = {
 			isa = PBXGroup;
 			children = (
+				15B1863424015FAE008266FE /* headers */,
 				15B1862D24015DC5008266FE /* main.cpp */,
 			);
 			path = opus_encode;

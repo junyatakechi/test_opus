@@ -1,15 +1,18 @@
-//
-//  main.cpp
-//  opus_encode
-//
-//  Created by Takechi on 2020/02/22.
-//  Copyright © 2020年 junyatakechi. All rights reserved.
-//
-
 #include <iostream>
+#include <stdlib.h>
+#include "headers/wave.h"
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-	// insert code here...
-	std::cout << "Hello, World!\n";
+	MONO_PCM pcm0;
+	char f_name[8] = "./a.wav";
+	wave_read_8bit_mono(&pcm0, f_name); //入力
+	
+	for(unsigned long n = 0; n < pcm0.length; n++){
+		cout << pcm0.s[n] << endl;
+	}
+	
+	
+	free(pcm0.s);
 	return 0;
 }
