@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1578A09D2401FAE3008E41E0 /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1578A09C2401FAE3008E41E0 /* libopus.a */; };
 		15B1862E24015DC5008266FE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15B1862D24015DC5008266FE /* main.cpp */; };
-		15B18636240169F5008266FE /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B18635240169F5008266FE /* libopus.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1578A09C2401FAE3008E41E0 /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus.a; sourceTree = "<group>"; };
 		15B1862A24015DC5008266FE /* opus_encode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = opus_encode; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B1862D24015DC5008266FE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		15B1863424015FAE008266FE /* headers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = headers; sourceTree = "<group>"; };
-		15B18635240169F5008266FE /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15B18636240169F5008266FE /* libopus.a in Frameworks */,
+				1578A09D2401FAE3008E41E0 /* libopus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 		15B1862C24015DC5008266FE /* opus_encode */ = {
 			isa = PBXGroup;
 			children = (
-				15B18635240169F5008266FE /* libopus.a */,
+				1578A09C2401FAE3008E41E0 /* libopus.a */,
 				15B1863424015FAE008266FE /* headers */,
 				15B1862D24015DC5008266FE /* main.cpp */,
 			);
@@ -189,6 +189,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				USE_HEADERMAP = NO;
 			};
 			name = Debug;
 		};
@@ -242,6 +243,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};

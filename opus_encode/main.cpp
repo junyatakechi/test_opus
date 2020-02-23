@@ -18,7 +18,7 @@ int main(int argc, const char * argv[]) {
 
 	OpusEncoder *enc;
 	int err = 0;
-	enc = opus_encoder_create(48000, 1, 2051, &err); // setting
+	enc = opus_encoder_create(48000, 1, OPUS_APPLICATION_RESTRICTED_LOWDELAY, &err); // setting
 	//cout << err << endl;
 	if(err != -1 || enc != NULL){ // check encoder init
 		cout << "ENCODER CREATED!" << endl;
